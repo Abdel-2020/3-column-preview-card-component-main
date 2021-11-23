@@ -1,96 +1,164 @@
 /*General Styling*/
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
-:root{
-    --bright-orange:hsl(31, 77%, 52%);
-    --dark-cyan:hsl(184, 100%, 22%);
-    --very-dark-cyan:hsl(179, 100%, 13%);
-    --transparent-white-paragraph:hsla(0, 0%, 100%, 0.75);
-    --very-light-gray:hsl(0, 0%, 95%);
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white-paragraph: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
 }
 
-body{
+body {
     box-sizing: border-box;
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
     background-color: var(--very-light-gray);
+}
+
+
+h1 {
+    font-family: "Big Shoulders Display";
+}
+
+p,
+a {
+    font-family: "Lexend Deca";
 }
 
 /*End of General Styling*/
 
 /*Card Container*/
 
-.card-container{
-    margin: 20vh auto;
-    height:600px;
+.card-container {
+    margin: 15vh auto;
+    height: 600px;
     display: flex;
     justify-content: center;
 }
-.card-section{
-    width:250px;
-    padding:50px;
+
+.card-section {
+    width: 250px;
+    padding: 50px 25px 50px 50px;
 }
 
 /*Card Container*/
 
-/*Text*/
-
-.card-heading{
-    font-family: "Big Shoulders Display";
-    font-size:  2rem;
-    font-weight: 700;
-    color: var(--very-light-gray);
-    text-transform: uppercase;
-    width:200px;
-}
-
-.card-text{
-    font-family: "Lexend Deca";
-    font-size: 15px;
-    font-weight: 400;
-    color:var(--transparent-white-paragraph);
-    line-height: 1.5rem;
-    width:200px;
-}
-
-/*End of Text*/
-
-
-/*Button Styling*/
-.card-button{
-    display: block;
-    height:50px;
-    width: 200px;
-    border-radius: 30px;
-    text-decoration: none;
-    background-color:var(--very-light-gray);
-    text-align: center;
-}
-
-.button-text{
-    margin-top: 50px;
-}
-/*End of Button Styling*/
-
 /*Card Styling*/
-.sedan-section{
-    border-radius: 15px 0  0 15px;
+.sedan-section {
+    border-radius: 15px 0 0 15px;
     background-color: var(--bright-orange);
 }
 
-.suv-section{
+.suv-section {
     background-color: var(--dark-cyan);
 }
 
-.luxury-section{
+.luxury-section {
     background-color: var(--very-dark-cyan);
     border-radius: 0 15px 15px 0;
 }
+
 /*End of  Card Styling*/
 
+/*Text Styling*/
+
+.card-heading {
+
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.card-text {
+
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--transparent-white-paragraph);
+    line-height: 1.7rem;
+    width: 210px;
+    margin-bottom: 150px;
+}
+
+/*End of Text Styling*/
+
+
+/*Button Styling*/
+.card-button {
+    display: block;
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    padding: 20px 30px 0 30px;
+    background-color: var(--very-light-gray);
+}
 
 
 
 
+.sedan-button-text {
+    text-decoration: none;
+    text-align: center;
+    color: var(--bright-orange);
+}
+
+.suv-button-text {
+    text-decoration: none;
+    text-align: center;
+    color: var(--dark-cyan);
+}
+
+.luxury-button-text {
+    text-decoration: none;
+    text-align: center;
+    color: var(--very-dark-cyan);
+}
+
+.sedan-button-text:hover {
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+
+.suv-button-text:hover {
+    background-color: var(--dark-cyan);
+    border: 2px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+}
+
+.luxury-button-text:hover {
+    background-color: var(--very-dark-cyan);
+    border: 2px solid var(--very-light-gray);
+    color: var(--very-light-gray)
+}
 
 
+
+/*End of Button Styling*/
+
+
+/*Media Query*/
+
+@media (max-width:375px) {
+    .card-container {
+        flex-direction: column;
+        margin: 100vh 5vw;
+    }
+
+    .sedan-section {
+        border-radius: 15px 15px 0 0;
+
+    }
+
+    .luxury-section {
+        border-radius: 0 0 15px 15px;
+
+    }
+
+
+}
+
+
+/*End of Media Query*/
