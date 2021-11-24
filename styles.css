@@ -32,7 +32,7 @@ a {
 
 .card-container {
     margin: 15vh auto;
-    height: 600px;
+    height: 500px;
     display: flex;
     justify-content: center;
 }
@@ -79,7 +79,7 @@ a {
     color: var(--transparent-white-paragraph);
     line-height: 1.7rem;
     width: 210px;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
 }
 
 /*End of Text Styling*/
