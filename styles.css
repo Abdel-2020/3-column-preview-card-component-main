@@ -144,8 +144,8 @@ a {
 @media (max-width:425px) {
     .card-container {
         flex-direction: column;
-        margin: 60vh 5vw;
-    }
+        margin: 70vh 50px;
+        }
 
     .sedan-section {
         border-radius: 15px 15px 0 0;
